@@ -1,0 +1,6 @@
+
+GET https://us-central1-quiz-eef08.cloudfunctions.net/helloWorld
+
+###
+
+GET https://us-central1-quiz-eef08.cloudfunctions.net/getData

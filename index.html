@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+</head>
+<body>
+   
+
+    <script>
+        // calling Google Cloud Function from front-end
+        fetch('https://us-central1-quiz-eef08.cloudfunctions.net/getData')
+        .then(resp => resp.json())
+        .then( respJson => {
+            console.log(respJson);
+        })        
+        .catch(err => {
+            console.error(err);
+        });
+    </script>
+    
+</body>
+</html>
