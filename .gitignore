@@ -1,5 +1,11 @@
 # Ignore everything
 *
+.firebaserc
+.gitignore
+firebase.json
+index.html
+test.http
+
 # But descend into directories
 !*/
 # Recursively allow files under subtree
