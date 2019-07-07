@@ -26,3 +26,24 @@ Related links and references
 - [Firebase functions](https://firebase.google.com/docs/functions/write-firebase-functions)
 - [Firestore CRUD & queries](https://firebase.google.com/docs/firestore/quickstart)
 - [CORS](https://www.npmjs.com/package/cors)
+
+
+-----
+
+Join our group Mississauga Coding! 
+=================================
+
+Find out about upcoming events by checking out: 
+----------------------------------------------
+
+- [Our meetup page](http://www.meetup.com/Mississauga-Coding/) 
+- [Our freeCodeCamp page](https://bit.ly/2MVVQLb)
+- [Our Slack channel](https://goo.gl/J69cro)
+
+Post your questions on any of these forums, attend our events, learn and share.
+
+Happy Coding!
+
+
+![Mississauga Coding](https://github.com/MississaugaCoding/mississaugacoding.github.io/blob/master/favicon-32x32.png "Mississauga Coding")
+
