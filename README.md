@@ -30,7 +30,7 @@ Related links and references
 
 -----
 
-Join our group Mississauga Coding! 
+Join us at Mississauga Coding! 
 =================================
 
 Find out about upcoming events by checking out: 
