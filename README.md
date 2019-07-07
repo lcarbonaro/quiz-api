@@ -1,5 +1,8 @@
 # quiz-api
 
+This is part 1 of a two-part series covering a [full-stack application example](https://quiz-mc.netlify.com/).
+
+In this part we walk through setting up a back-end data API, using Google Cloud Functions and Cloud Firestore. 
 
 Usage steps:
 
