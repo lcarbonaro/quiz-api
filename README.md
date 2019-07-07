@@ -15,7 +15,7 @@ Then:
 2. `mkdir project-folder && cd project-folder`
     - make sure you're inside the project folder before the next step
 3. `firebase init`
-    -  select `Functions` with spacebar & press Enter
+    -  select `Functions` with spacebar and press Enter
 4. open `functions/index.js` in code editor
 5. paste in code from this repo's `functions/index.js`
 
