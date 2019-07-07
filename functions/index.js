@@ -14,7 +14,7 @@ exports.getData = functions.https.onRequest((req, res) => {
     cors(req, res, () => {
 
         // assumes a collection in your Cloud Firestore named 'quiz'; edit accordingly
-        // also assumes there's at least one document in that collection
+        // preferably there's also some data there, i.e. documents in the collection
         db.collection('quiz').get()
         .then( result => {
             let data = [];
