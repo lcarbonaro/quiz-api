@@ -4,29 +4,21 @@ const functions = require('firebase-functions');
 // // https://firebase.google.com/docs/functions/write-firebase-functions
 //
 
+// set up database connection
 const admin = require('firebase-admin');
 admin.initializeApp( functions.config().firebase);
 const db = admin.firestore();
 
-const cors = require('cors')({
-    origin: 'https://quiz-mc.netlify.com'     
-});
-
-exports.helloWorld = functions.https.onRequest((req, res) => {
-    cors(req, res, () => {
-        res.send("hi from Mississauga Coding");
-    });  
-});
+// change default CORS policy, to enable calls to this API from any origin
+const cors = require('cors')({  origin: true  });  // allows any origin to call API functions
 
 exports.getData = functions.https.onRequest((req, res) => {
-    cors(req, res, () => {
-        /*
-        let data = {
-            question: "What is the capital city of Norway?",
-            answer: "Oslo"
-        };
-        */
 
+    // wrap main logic in cors middleware
+    cors(req, res, () => {
+
+        // assumes a collection in your Cloud Firestore named 'quiz'; edit accordingly
+        // also assumes there's at least one document in that collection
         db.collection('quiz').get()
         .then( result => {
             let data = [];
@@ -37,8 +29,10 @@ exports.getData = functions.https.onRequest((req, res) => {
             res.send();
         })
         .catch( err => {
-            console.error(err);
+            res.json({ success:false, error:err });
+            res.send();
         });
         
-    }); 
-});
+    });  // cors 
+
+});  // getData function
