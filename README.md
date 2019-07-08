@@ -21,6 +21,7 @@ Then:
     -  select `Functions` with spacebar and press Enter
 4. open `functions/index.js` in code editor
 5. paste in code from this repo's `functions/index.js`
+6. `firebase deploy`
 
 
 Related links and references
