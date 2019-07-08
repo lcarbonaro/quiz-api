@@ -5,8 +5,11 @@ const admin = require('firebase-admin');
 admin.initializeApp( functions.config().firebase);
 const db = admin.firestore();
 
-// change default CORS policy, to enable calls to this API from any origin
-const cors = require('cors')({  origin: true  });  // allows any origin to call API functions
+// change default CORS policy
+// allow calls to this API from any origin
+const cors = require('cors')({ origin: true });  
+// allow calls to this API only from example.com
+//const cors = require('cors')({ origin: 'http://example.com' });  
 
 exports.getData = functions.https.onRequest((req, res) => {
 
