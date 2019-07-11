@@ -29,6 +29,8 @@ Then:
 4. open your `functions/index.js` in code editor
 5. paste in code from the file `functions/index.js` that you'll find in this repo
 6. `firebase deploy` at the terminal or command prompt
+    - at the end should say something like `Deploy complete`
+    - deploy needs to be repeated each time you change this code
 
 **Make sure that firebase commands like init and deploy are run in your project folder.**
 
