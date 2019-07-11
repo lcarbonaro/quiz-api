@@ -4,6 +4,8 @@ This is part 1 of a two-part series covering a [full-stack application example](
 
 In this part we walk through setting up a back-end data API, using Google Cloud Functions and Cloud Firestore. 
 
+**Make sure you have NodeJS installed before proceeding any further. You can check by typing in `node -v` at the terminal or command prompt.**
+
 Usage steps:
 
 1. Log into [Google Firebase console](https://firebase.google.com/)
@@ -18,10 +20,17 @@ Then:
 2. `mkdir project-folder && cd project-folder`
     - make sure you're inside the project folder before the next step
 3. `firebase init`
-    -  select `Functions` with spacebar and press Enter
-4. open `functions/index.js` in code editor
-5. paste in code from this repo's `functions/index.js`
-6. `firebase deploy`
+    - use the arrow keys to move up and down the list of features; we need `Functions`
+    - select `Functions` with spacebar and press Enter
+    - similarly, select the Firebase project name you created earlier
+    - for the rest of the init prompts, take defaults, i.e. just press Enter
+    - at the end should say something like `Firebase initialisation complete`
+  
+4. open your `functions/index.js` in code editor
+5. paste in code from the file `functions/index.js` that you'll find in this repo
+6. `firebase deploy` at the terminal or command prompt
+
+**Make sure that firebase commands like init and deploy are run in your project folder.**
 
 
 Related links and references
